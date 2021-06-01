@@ -1,0 +1,7 @@
+name: BlackDesertPro
+version: ${project.version}
+main: com.github.sky295.BlackDesertPro
+api-version: 1.13
+authors: [SKY]
+commands:
+  bdp:

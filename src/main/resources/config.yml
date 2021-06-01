@@ -1,0 +1,495 @@
+BlackDesertPro:
+  #可强化物品类型，支持MOD物品
+  Languages: 'zh_CN'
+  Type:
+    Weapon:
+      - 268
+      - 272
+      - 267
+      - 283
+      - 276
+    Arrom:
+      - 298
+      - 299
+      - 300
+      - 301
+      - 302
+      - 303
+      - 304
+      - 305
+      - 306
+      - 307
+      - 308
+      - 309
+      - 310
+      - 311
+      - 312
+      - 313
+      - 314
+      - 315
+      - 316
+      - 317
+  #物品英文ID，仅1.12以上版本使用（这主要是给1.16用的，因为在1.16版本下，物品原来的数字ID被取消了，导致无法识别物品）
+  EnglishType:
+    Weapon:
+      - 'NETHERITE_SWORD'
+      - 'DIAMOND_SWORD'
+      - 'IRON_SWORD'
+      - 'WOODEN_SWORD'
+      - 'STONE_SWORD'
+      - 'GOLDEN_SWORD'
+    Arrom:
+      - 'LEATHER_HELMET'
+      - 'LEATHER_CHESTPLATE'
+      - 'LEATHER_LEEGINGS'
+      - 'LEATHER_BOOTS'
+      - 'IRON_HELMET'
+      - 'IRON_CHESTPLATE'
+      - 'IRON_LEGGINGS'
+      - 'IRON_BOOTS'
+      - 'GOLDEN_BOOTS'
+      - 'GOLDEN_HELMET'
+      - 'GOLDEN_CHESTPLATE'
+      - 'GOLDEN_LEGGINGS'
+      - 'DIAMOND_LEGGINGS'
+      - 'DIAMOND_BOOTS'
+      - 'DIAMOND_HELMET'
+      - 'DIAMOND_CHESTPLATE'
+      - 'NETHERITE_CHESTPLATE'
+      - 'NETHERITE_HELMET'
+      - 'NETHERITE_LEGGINGS'
+      - 'NETHERITE_BOOTS'
+  #首识别强化lore
+  startLore: '&8&m--------&8&l[ &c&l强化 &8&l]&8&m--------'
+  #尾识别强化lore
+  endLore: '&8&m-----------------------'
+  WeaponStoneLore: '&d黑石(武器)'
+  ArromStoneLore: '&d黑石(防具)'
+  WeaponStoneLore1: '&d凝聚魔力的黑石(武器)'
+  ArromStoneLore1: '&d凝聚魔力的黑石(防具)'
+  ornamentsLore: '&c饰品'
+  PuremagicBlackstone: '&4纯粹的魔力黑石'
+  Plan:
+    1:
+      #rand设置强化成功率
+      rand: 100.0
+      #是否开启强化成功全服公告
+      isBroadcastdMsg: false
+      #是否使用凝聚的黑石强化
+      requireConcentratedStones: false
+      #武器强化方案
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+10'
+          - '§6伤害加成：§f+1%'
+          - '§6护甲穿透：§f+1%'
+      #防具强化方案
+      Arrom:
+        lore:
+          - '§6物理防御：§f+5'
+          - '§6护甲值：§f+1%'
+          - '§6生命力：§f+10'
+    2:
+      rand: 100.0
+      isBroadcastdMsg: false
+      requireConcentratedStones: false
+      Weapon:
+        lore:
+          - '§6物理伤害：+§f20'
+          - '§6伤害加成：§f+2%'
+          - '§6护甲穿透：§f+2%'
+      Arrom:
+        lore:
+          - '§6物理防御：+§f10'
+          - '§6护甲值：§f+2%'
+          - '§6生命力：§f+20'
+    3:
+      rand: 100.0
+      isBroadcastdMsg: false
+      requireConcentratedStones: false
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+30'
+          - '§6伤害加成：§f+3%'
+          - '§6护甲穿透：§f+3%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+15'
+          - '§6护甲值：§f+3%'
+          - '§6生命力：§f+30'
+    4:
+      rand: 100.0
+      isBroadcastdMsg: false
+      requireConcentratedStones: false
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+40'
+          - '§6伤害加成：§f+4%'
+          - '§6护甲穿透：§f+4%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+20'
+          - '§6护甲值：§f+4%'
+          - '§6生命力：§f+40'
+    5:
+      rand: 100.0
+      isBroadcastdMsg: false
+      requireConcentratedStones: false
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+50'
+          - '§6伤害加成：§f+5%'
+          - '§6护甲穿透：§f+5%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+25'
+          - '§6护甲值：§f+5%'
+          - '§6生命力：§f+50'
+    6:
+      rand: 100.0
+      isBroadcastdMsg: false
+      requireConcentratedStones: false
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+60'
+          - '§6伤害加成：§f+6%'
+          - '§6护甲穿透：§f+6%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+30'
+          - '§6护甲值：§f+6%'
+          - '§6生命力：§f+60'
+    7:
+      rand: 100.0
+      isBroadcastdMsg: false
+      requireConcentratedStones: false
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+70'
+          - '§6伤害加成：§f+7%'
+          - '§6护甲穿透：§f+7%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+35'
+          - '§6护甲值：§f+7%'
+          - '§6生命力：§f+70'
+    8:
+      rand: 13.2
+      #最高堆叠层数
+      maxCount: 13
+      #每次堆叠所增加的成功率
+      evevyLevelchance: 2.5
+      #强制突破所消耗的黑石数量
+      safeStone: 2
+      isBroadcastdMsg: false
+      requireConcentratedStones: false
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+80'
+          - '§6伤害加成：§f+8%'
+          - '§6护甲穿透：§f+8%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+40'
+          - '§6护甲值：§f+8%'
+          - '§6生命力：§f+80'
+    9:
+      rand: 11.55
+      maxCount: 14
+      evevyLevelchance: 2.0
+      safeStone: 3
+      isBroadcastdMsg: false
+      requireConcentratedStones: false
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+90'
+          - '§6伤害加成：§f+9%'
+          - '§6护甲穿透：§f+9%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+45'
+          - '§6护甲值：§f+9%'
+          - '§6生命力：§f+90'
+    10:
+      rand: 9.9
+      maxCount: 15
+      evevyLevelchance: 1.5
+      safeStone: 5
+      isBroadcastdMsg: false
+      requireConcentratedStones: false
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+100'
+          - '§6伤害加成：§f+10%'
+          - '§6护甲穿透：§f+10%'
+          - '§6暴击几率：§f+10%'
+          - '§6暴击倍率：§f+20%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+50'
+          - '§6护甲值：§f+10%'
+          - '§6生命力：§f+100'
+          - '§6耐久度:无限耐久'
+    11:
+      rand: 8.25
+      maxCount: 16
+      evevyLevelchance: 1.25
+      safeStone: 7
+      isBroadcastdMsg: false
+      requireConcentratedStones: false
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+110'
+          - '§6伤害加成：§f+11%'
+          - '§6护甲穿透：§f+11%'
+          - '§6暴击几率：§f+11%'
+          - '§6暴击倍率：§f+22%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+55'
+          - '§6护甲值：§f+11%'
+          - '§6生命力：§f+110'
+          - '§6耐久度:无限耐久'
+    12:
+      rand: 6.6
+      maxCount: 18
+      evevyLevelchance: 0.75
+      safeStone: 11
+      isBroadcastdMsg: false
+      requireConcentratedStones: false
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+120'
+          - '§6伤害加成：§f+12%'
+          - '§6护甲穿透：§f+12%'
+          - '§6暴击几率：§f+12%'
+          - '§6暴击倍率：§f+24%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+60'
+          - '§6护甲值：§f+12%'
+          - '§6生命力：§f+120'
+          - '§6耐久度:无限耐久'
+    13:
+      rand: 4.95
+      maxCount: 20
+      evevyLevelchance: 0.63
+      safeStone: 17
+      PuremagicBlackstoneAmonut: 5
+      isBroadcastdMsg: false
+      requireConcentratedStones: false
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+130'
+          - '§6伤害加成：§f+13%'
+          - '§6护甲穿透：§f+13%'
+          - '§6暴击几率：§f+13%'
+          - '§6暴击倍率：§f+26%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+65'
+          - '§6护甲值：§f+13%'
+          - '§6生命力：§f+130'
+          - '§6耐久度:无限耐久'
+    14:
+      rand: 3.3
+      maxCount: 25
+      evevyLevelchance: 0.5
+      safeStone: 23
+      PuremagicBlackstoneAmonut: 8
+      isBroadcastdMsg: false
+      requireConcentratedStones: false
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+140'
+          - '§6伤害加成：§f+14%'
+          - '§6护甲穿透：§f+14%'
+          - '§6暴击几率：§f+14%'
+          - '§6暴击倍率：§f+28%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+70'
+          - '§6护甲值：§f+14%'
+          - '§6生命力：§f+140'
+          - '§6耐久度:无限耐久'
+    15:
+      rand: 1.65
+      maxCount: 25
+      evevyLevelchance: 0.5
+      safeStone: 29
+      PuremagicBlackstoneAmonut: 13
+      isBroadcastdMsg: false
+      requireConcentratedStones: false
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+1500'
+          - '§6真实伤害：§f+100'
+          - '§6伤害加成：§f+15%'
+          - '§6护甲穿透：§f+15%'
+          - '§6暴击几率：§f+15%'
+          - '§6暴击倍率：§f+30%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+75'
+          - '§6护甲值：§f+15%'
+          - '§6生命力：§f+150'
+          - '§6暴击抵抗：§f+5%'
+          - '§6耐久度:无限耐久'
+    16:
+      rand: 15.0
+      maxCount: 25
+      ExtraBalks: 2
+      evevyLevelchance: 1.5
+      isBroadcastdMsg: false
+      requireConcentratedStones: true
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+1600'
+          - '§6真实伤害：§f+200'
+          - '§6伤害加成：§f+16%'
+          - '§6护甲穿透：§f+16%'
+          - '§6暴击几率：§f+16%'
+          - '§6暴击倍率：§f+32%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+80'
+          - '§6护甲值：§f+16%'
+          - '§6生命力：§f+160'
+          - '§6暴击抵抗：§f+10%'
+          - '§6耐久度:无限耐久'
+    17:
+      rand: 7.5
+      maxCount: 35
+      ExtraBalks: 3
+      evevyLevelchance: 0.75
+      isBroadcastdMsg: false
+      requireConcentratedStones: true
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+1700'
+          - '§6真实伤害：§f+300'
+          - '§6伤害加成：§f+17%'
+          - '§6护甲穿透：§f+17%'
+          - '§6暴击几率：§f+17%'
+          - '§6暴击倍率：§f+34%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+85'
+          - '§6护甲值：§f+17%'
+          - '§6生命力：§f+170'
+          - '§6暴击抵抗：§f+15%'
+          - '§6耐久度:无限耐久'
+    18:
+      rand: 5.0
+      maxCount: 44
+      ExtraBalks: 4
+      evevyLevelchance: 0.5
+      isBroadcastdMsg: true
+      requireConcentratedStones: true
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+1800'
+          - '§6真实伤害：§f+400'
+          - '§6伤害加成：§f+18%'
+          - '§6护甲穿透：§f+18%'
+          - '§6暴击几率：§f+18%'
+          - '§6暴击倍率：§f+36%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+90'
+          - '§6护甲值：§f+18%'
+          - '§6生命力：§f+180'
+          - '§6暴击抵抗：§f+20%'
+          - '§6耐久度:无限耐久'
+    19:
+      rand: 2.0
+      maxCount: 90
+      ExtraBalks: 5
+      evevyLevelchance: 0.25
+      isBroadcastdMsg: true
+      requireConcentratedStones: true
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+1900'
+          - '§6真实伤害：§f+500'
+          - '§6伤害加成：§f+19%'
+          - '§6护甲穿透：§f+19%'
+          - '§6吸血几率：§f+100%'
+          - '§6暴击几率：§f+19%'
+          - '§6暴击倍率：§f+38%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+95'
+          - '§6护甲值：§f+19%'
+          - '§6生命力：§f+190'
+          - '§6暴击抵抗：§f+25%'
+          - '§6耐久度:无限耐久'
+    20:
+      rand: 1.5
+      maxCount: 124
+      ExtraBalks: 6
+      evevyLevelchance: 0.15
+      isBroadcastdMsg: true
+      requireConcentratedStones: true
+      Weapon:
+        lore:
+          - '§6物理伤害：§f+2000'
+          - '§6真实伤害：§f+600'
+          - '§6伤害加成：§f+20%'
+          - '§6护甲穿透：§f+20%'
+          - '§6吸血几率：§f+150%'
+          - '§6暴击几率：§f+20%'
+          - '§6暴击倍率：§f+40%'
+      Arrom:
+        lore:
+          - '§6物理防御：§f+100'
+          - '§6护甲值：§f+20%'
+          - '§6生命力：§f+200'
+          - '§6暴击抵抗：§f+30%'
+          - '§6耐久度:无限耐久'
+  ornamentsPlan:
+    1:
+      rand: 15.0
+      maxCount: 25
+      evevyLevelchance: 2.50
+      isBroadcastdMsg: false
+      lore:
+        - '§6物理伤害：§f+100'
+        - '§6真实伤害：§f+100'
+        - '§6伤害加成：§f+10%'
+    2:
+      rand: 7.5
+      maxCount: 35
+      evevyLevelchance: 1.0
+      isBroadcastdMsg: true
+      lore:
+        - '§6物理伤害：§f+200'
+        - '§6真实伤害：§f+200'
+        - '§6伤害加成：§f+20%'
+    3:
+      rand: 5.0
+      maxCount: 44
+      evevyLevelchance: 0.75
+      isBroadcastdMsg: true
+      lore:
+        - '§6物理伤害：§f+300'
+        - '§6真实伤害：§f+300'
+        - '§6伤害加成：§f+30%'
+    4:
+      rand: 2.5
+      maxCount: 90
+      evevyLevelchance: 0.25
+      isBroadcastdMsg: true
+      lore:
+        - '§6物理伤害：§f+400'
+        - '§6真实伤害：§f+400'
+        - '§6伤害加成：§f+40%'
+    5:
+      rand: 1.5
+      maxCount: 124
+      evevyLevelchance: 0.05
+      isBroadcastdMsg: true
+      lore:
+        - '§6物理伤害：§f+500'
+        - '§6真实伤害：§f+500'
+        - '§6伤害加成：§f+50%'
