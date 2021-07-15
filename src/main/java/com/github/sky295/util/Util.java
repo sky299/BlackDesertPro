@@ -9,6 +9,8 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Util {
     public static Double rand() {
@@ -85,5 +87,12 @@ public class Util {
     public static String langSu() {
         String[] str = Setting.lang().split("_");
         return str[1];
+    }
+
+    public static double getStringNum(String s, String s1) {
+        String[] strings = s.split(s1);
+        String[] strings1 = strings[1].split("%");
+        String[] strings2 = strings1[0].split(" §b");
+        return Double.parseDouble(strings2[1]);
     }
 }

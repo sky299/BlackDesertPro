@@ -50,13 +50,13 @@ public class BlackDesertProEvent implements Listener {
                                     if (Context.WEAPON.equals(Util.TypeId(itemStack)) || Context.ARROM.equals(Util.TypeId(itemStack))) {
                                         meta2.setLore(Arrays.asList(BKI18n.get("NextProbabilityLevel", new Locale(Util.langPerfix(), Util.langSu())) + " §b" + (Setting.rd(Util.sucesslevel(meta)) + Util.chance(Util.sucesslevel(meta), meta)) + "%"));
                                         itemStack2.setItemMeta(meta2);
-                                        cancel();
+                                        this.cancel();
                                     }
                                 } catch (NullPointerException e) {
                                     if (meta.hasLore() && meta.getLore().contains(Setting.ornamentsLore())) {
                                         meta2.setLore(Arrays.asList(BKI18n.get("NextProbabilityLevel", new Locale(Util.langPerfix(), Util.langSu())) + " §b" + (Setting.ornamentsRand(Util.sucesslevel(meta)) + Util.ornamentsChance(Util.sucesslevel(meta), meta)) + "%"));
                                         itemStack2.setItemMeta(meta2);
-                                        cancel();
+                                        this.cancel();
                                     }
                                 }
                             }
@@ -208,8 +208,18 @@ public class BlackDesertProEvent implements Listener {
                             }
                             meta.setLore(lore);
                             itemStack.setItemMeta(meta);
-                            inventory.removeItem(itemStack1);
+                            itemStack1.setAmount(itemStack1.getAmount() - 1);
                             player.sendMessage(BKI18n.get("UseBalks", new Locale(Util.langPerfix(), Util.langSu())) + zgcs);
+                            new BukkitRunnable() {
+                                @Override
+                                public void run() {
+                                    ItemStack itemStack2 = inventory.getItem(39);
+                                    ItemMeta meta2 = itemStack2.getItemMeta();
+                                    List<String> list = meta2.getLore();
+                                    meta2.setLore(Arrays.asList(BKI18n.get("NextProbabilityLevel", new Locale(Util.langPerfix(), Util.langSu())) + " §b" + (Util.getStringNum(list.get(0),BKI18n.get("NextProbabilityLevel", new Locale(Util.langPerfix(), Util.langSu()))) + zgcs * Setting.evevyLevelchance(Util.level(meta))) + "%"));
+                                    itemStack2.setItemMeta(meta2);
+                                }
+                            }.runTaskAsynchronously(BlackDesertPro.instance);
                         } else {
                             player.sendMessage(BKI18n.get("Current", new Locale(Util.langPerfix(), Util.langSu())));
                         }
@@ -226,6 +236,17 @@ public class BlackDesertProEvent implements Listener {
                             itemStack.setItemMeta(meta);
                             player.getInventory().addItem(itemStack1);
                             player.sendMessage(BKI18n.get("SaveIt", new Locale(Util.langPerfix(), Util.langSu())) + dzcs);
+                            new BukkitRunnable() {
+                                @Override
+                                public void run() {
+                                    ItemStack itemStack2 = inventory.getItem(39);
+                                    ItemMeta meta2 = itemStack2.getItemMeta();
+                                    List<String> list = meta2.getLore();
+                                    meta2.setLore(Arrays.asList(BKI18n.get("NextProbabilityLevel", new Locale(Util.langPerfix(), Util.langSu())) + " §b" + (Util.getStringNum(list.get(0),BKI18n.get("NextProbabilityLevel", new Locale(Util.langPerfix(), Util.langSu()))) - dzcs * Setting.evevyLevelchance(Util.level(meta))) + "%"));
+                                    itemStack2.setItemMeta(meta2);
+                                }
+                            }.runTaskAsynchronously(BlackDesertPro.instance);
+
                         }
                     }
                 }
